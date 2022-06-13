@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Link">#002BFF</color>
+    <color name="Linky">#3149CE</color>
+    <color name="betterlinkme">#3674ca</color>
 </resources>
