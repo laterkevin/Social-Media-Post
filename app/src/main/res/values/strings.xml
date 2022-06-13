@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Social Media Post</string>
     <string name="back_arrow">Back Arrow</string>
+    <string name="beitr_ge">Beiträge</string>
+    <string name="_6gag">6gag</string>
+    <string name="gef_llt_320_021_mal">Gefällt 320.021 Mal</string>
+    <string name="_6gag2">6gag</string>
+    <string name="coding_meme_ifelse_6gag">#coding #meme #ifElse #6gag</string>
+    <string name="stacking_if_else_statements_be_like">Stacking if-else-statements be like</string>
+    <string name="rndimage">rndimage</string>
+    <string name="profilimage">profilimage</string>
+    <string name="commentbutton">commentbutton</string>
+    <string name="thumbsbutton">thumbsbutton</string>
+    <string name="sharearrow">sharearrow</string>
 </resources>

@@ -19,13 +19,15 @@
 
         <ImageButton
             android:id="@+id/ibBackArrow"
-            android:layout_width="42dp"
-            android:layout_height="35dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="start"
             android:background="@color/white"
             android:contentDescription="@string/back_arrow"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/back_arrow" />
+            app:srcCompat="@drawable/back_arrow"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="10dp" />
 
         <!-- Füge hier weitere Elemente ein-->
         <TextView
@@ -33,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Beiträge"
+            android:text="@string/beitr_ge"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textSize="24sp"
             app:layout_constraintStart_toEndOf="@+id/ibBackArrow"
@@ -46,6 +48,7 @@
         android:layout_width="411dp"
         android:layout_height="423dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/rndimage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profil_image"
         app:srcCompat="@drawable/image" />
@@ -56,6 +59,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/profilimage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:srcCompat="@drawable/profile_picture" />
@@ -65,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="6gag"
+        android:text="@string/_6gag"
         app:layout_constraintBottom_toBottomOf="@+id/profil_image"
         app:layout_constraintStart_toEndOf="@+id/profil_image"
         app:layout_constraintTop_toTopOf="@+id/profil_image" />
@@ -74,9 +78,12 @@
         android:id="@+id/imageView4"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/commentbutton"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/comment" />
 
@@ -86,7 +93,8 @@
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/thumbsbutton"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -96,10 +104,14 @@
         android:id="@+id/imageView5"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/sharearrow"
+        app:layout_constraintBottom_toTopOf="@+id/likes"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/send"
-        tools:layout_editor_absoluteX="96dp" />
+        app:srcCompat="@drawable/send" />
 
     <TextView
         android:id="@+id/likes"
@@ -107,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Gefällt 320.021 Mal"
+        android:text="@string/gef_llt_320_021_mal"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="6gag"
+        android:text="@string/_6gag2"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="#coding #meme #ifElse #6gag"
+        android:text="@string/coding_meme_ifelse_6gag"
         android:textColor="@color/betterlinkme"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Stacking if-else-statements be like"
+        android:text="@string/stacking_if_else_statements_be_like"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/profil_namev2"
         app:layout_constraintTop_toBottomOf="@+id/likes" />
